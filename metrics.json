@@ -1,0 +1,53 @@
+{
+  "train_metrics": {
+    "R2": 0.9409,
+    "Adjusted_R2": 0.9403,
+    "MAE": 6.7,
+    "RMSE": 10.338,
+    "MAPE_percent": 10.36
+  },
+  "test_metrics": {
+    "R2": 0.9651,
+    "Adjusted_R2": 0.9637,
+    "MAE": 6.343,
+    "RMSE": 8.271,
+    "MAPE_percent": 9.8
+  },
+  "cross_validation_5fold": {
+    "R2_mean": 0.9447,
+    "R2_std": 0.0179,
+    "RMSE_mean": 9.925,
+    "RMSE_std": 1.595
+  },
+  "baseline_mean_predictor_RMSE": 44.449,
+  "model_comparison": {
+    "baseline_no_interaction": {
+      "test_R2": 0.9242,
+      "test_RMSE": 12.194,
+      "cv_R2_mean": 0.9088
+    },
+    "final_with_interaction": {
+      "test_R2": 0.9651,
+      "test_RMSE": 8.271,
+      "cv_R2_mean": 0.9447
+    }
+  },
+  "assumption_diagnostics": {
+    "ols_r2_train": 0.9409,
+    "f_test_p_value": 0.0,
+    "durbin_watson": 2.034,
+    "breusch_pagan_p_value": 0.006,
+    "shapiro_wilk_p_value": 0.0,
+    "max_vif": 14.02,
+    "non_significant_features": [
+      "bedrooms",
+      "locality_type_Prime",
+      "locality_type_Suburban"
+    ]
+  },
+  "dataset": {
+    "rows_after_cleaning": 1995,
+    "n_train": 1596,
+    "n_test": 399
+  }
+}
