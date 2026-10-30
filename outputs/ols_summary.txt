@@ -1,0 +1,40 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.941
+Model:                            OLS   Adj. R-squared:                  0.940
+Method:                 Least Squares   F-statistic:                     1570.
+Date:                Fri, 30 Oct 2026   Prob (F-statistic):               0.00
+Time:                        15:15:34   Log-Likelihood:                -5992.6
+No. Observations:                1596   AIC:                         1.202e+04
+Df Residuals:                    1579   BIC:                         1.211e+04
+Df Model:                          16                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+const                        80.6028      1.077     74.854      0.000      78.491      82.715
+area_sqft                    15.7848      0.696     22.673      0.000      14.419      17.150
+bedrooms                      0.7721      0.703      1.098      0.272      -0.607       2.152
+bathrooms                     3.2499      0.461      7.057      0.000       2.347       4.153
+age_years                    -3.9054      0.261    -14.953      0.000      -4.418      -3.393
+floor                         1.3929      0.335      4.156      0.000       0.735       2.050
+total_floors                  0.7592      0.384      1.979      0.048       0.007       1.512
+parking_spaces                2.6736      0.261     10.235      0.000       2.161       3.186
+distance_to_center_km        -5.3796      0.653     -8.238      0.000      -6.660      -4.099
+has_lift                      0.6837      0.320      2.140      0.033       0.057       1.311
+has_security                  1.0821      0.262      4.136      0.000       0.569       1.595
+area_x_prime                 27.3110      0.919     29.734      0.000      25.509      29.113
+area_x_midrange              15.2379      0.924     16.483      0.000      13.425      17.051
+furnishing_Semi-furnished    -3.9374      0.648     -6.076      0.000      -5.209      -2.666
+furnishing_Unfurnished       -7.3023      0.674    -10.833      0.000      -8.625      -5.980
+locality_type_Prime           4.4757      2.295      1.950      0.051      -0.026       8.977
+locality_type_Suburban        1.7732      2.022      0.877      0.381      -2.193       5.739
+==============================================================================
+Omnibus:                     1543.962   Durbin-Watson:                   2.034
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           210635.175
+Skew:                           4.135   Prob(JB):                         0.00
+Kurtosis:                      58.669   Cond. No.                         17.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
